@@ -8,15 +8,117 @@
 }
 
 @font-face  {
-    font-family: 'Menseal';
+    font-family: 'Menseal-Regular';
+    src: url(../assets/fonts/Menseal-Regular.ttf);
+}
+@font-face  {
+    font-family: 'Menseal-Black';
     src: url(../assets/fonts/Menseal-Black.ttf);
 }
 
-@media screen and (max-width: 425px) {
-    
+@font-face  {
+    font-family: 'Menseal-Bold';
+    src: url(../assets/fonts/Menseal-Bold.ttf);
+}
+
+@font-face  {
+    font-family: 'Menseal-ExtraBold';
+    src: url(../assets/fonts/Menseal-ExtraBold.ttf);
+}
+
+@font-face  {
+    font-family: 'Menseal-Medium';
+    src: url(../assets/fonts/Menseal-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'AtkinsonHyperlegible-Regular';
+    src: url(../assets/fonts/Atkinson-Hyperlegible-Regular-102.ttf);
+}
+
+@font-face {
+    font-family: 'AtkinsonHyperlegible-Italic';
+    src: url(../assets/fonts/Atkinson-Hyperlegible-Italic-102.ttf);
+}
+
+@font-face {
+    font-family: 'AtkinsonHyperlegible-Bold';
+    src: url(../assets/fonts/Atkinson-Hyperlegible-Bold-102.ttf);
+}
+
+@font-face {
+    font-family: 'AtkinsonHyperlegible-BoldItalic';
+    src: url(../assets/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf);
+}
+
+@media screen and (max-width: 690px) {
+    #top-header   {
+        /* background-color: var(--background-head); */
+    }
 }
 
 body    {
     background-color: var(--background-main);
-    font-family: 'Menseal', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Menseal-Bold', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header  {
+    color: var(--text-color-1);
+    width: 100%;
+}
+
+h1  {
+    font-size: 40px;
+
+}
+
+h2  {
+    font-size: 30px;
+    background-color: var(--background-head);
+    color: var(--text-color-1);
+}
+
+.card   {
+    background-color: var(--background-section);
+}
+
+a   {
+    text-decoration: none;
+    color: var(--text-color-1);
+    font-family: 'AtkinsonHyperlegible-Bold', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+p   {
+    font-family: 'AtkinsonHyperlegible-Bold', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#top-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-head);
+    padding-right: 20px;
+    border: 5px solid var(--background-section);
+    border-right: 0;
+}
+
+#navbar li  {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+#logo   {
+    background-color: var(--background-head);
+    width: 25%;
+    padding-left: 30px;
+    border: 5px solid var(--background-section);
+    border-left: 0;
 }
