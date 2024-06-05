@@ -1,6 +1,6 @@
 [reset.css](https://meyerweb.com/eric/tools/css/reset/)
 
-[Menseal font](https://fontesk.com/menseal-typeface/)
+[Menseal font](https://fontesk.com/menseal-typeface/), 
 [Atkinson Hyperlegible Font](https://www.fontsquirrel.com/fonts/atkinson-hyperlegible)
 
 [Succulent photo](https://www.pexels.com/photo/close-up-photo-of-succulent-plants-1868870/), 
