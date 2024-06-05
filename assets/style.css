@@ -1,0 +1,22 @@
+:root   {
+    --background-main: #f3d6d6;
+    --background-head: #0a3620;
+    --background-section: #64917a;
+    --text-color-1: #b89696;
+    --border-color: black;
+    --section-shadow-color: #917878;
+}
+
+@font-face  {
+    font-family: 'Menseal';
+    src: url(../assets/fonts/Menseal-Black.ttf);
+}
+
+@media screen and (max-width: 425px) {
+    
+}
+
+body    {
+    background-color: var(--background-main);
+    font-family: 'Menseal', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
