@@ -76,6 +76,7 @@ h2  {
     font-size: 30px;
     background-color: var(--background-head);
     color: var(--text-color-1);
+    border-radius: 10px;
 }
 
 .right-head {
@@ -100,7 +101,6 @@ a   {
     text-decoration: none;
     color: var(--text-color-1);
     font-family: 'AtkinsonHyperlegible-Bold', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
 p   {
@@ -140,7 +140,7 @@ p   {
 .card {
     display:flex;
     justify-content:space-between;
-    align-items:center; 
+    align-items:center;
 }
 
 #section-about  {
@@ -152,19 +152,46 @@ p   {
     border-left: 0;
     box-shadow: #917878 10px 10px 10px, #917878 -10px 10px 10px;
     margin-bottom: 30px;
+    position: relative;
+    height: 150px;
+    width: 90%;
+}
+
+#section-resume {
+    background-color: #64917a;
+    margin-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: #0a3620 5px solid;
+    border-left: 0;
+    box-shadow: #917878 10px 10px 10px, #917878 -10px 10px 10px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 150px;
+    width: 90%;
+}
+
+.text   {
+    position: relative;
+    margin-left: 100px;
+    padding-left: 100px;
+    margin-right: 100px;
+    line-height: 1.4;
 }
 
 .left-cover {
-    background-color: #ffffff;
-    width: 90%;
-    height: 100px;
-    z-index: 30;
     position: absolute;
+    background-color: var(--background-section);
+    width: 90%;
+    height: 150px;
+    z-index: 30;
     transition: width 2s;
+    border: var(--border-color) dashed 3px;
+    border-left: 0;
 }
 
 #section-about:hover > .left-cover   {
-    width:0%
+    width:5%
 }
 
 #section-portfolio  {
@@ -177,35 +204,10 @@ p   {
     border-right: 0;
     margin-bottom: 30px;
     transition: width 2s;
-}
-
-.right-cover    {
-    background-color: #ffffff;
     width: 90%;
-    height: 100px;
-    z-index: 30;
-    position: absolute;
-    right: 0;
-    transition: width 2s;
-}
-
-#section-portfolio:hover > .right-cover   {
-    width:0%
-}
-
-#section-resume {
-    background-color: #64917a;
-    margin-right: 10%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: #0a3620 5px solid;
-    border-left: 0;
-    box-shadow: #917878 10px 10px 10px, #917878 -10px 10px 10px;
-    margin-bottom: 30px;
-}
-
-#section-resume:hover > .left-cover   {
-    width:0%
+    height: 150px;
+    position: relative;
+    float: right;
 }
 
 #section-contact    {
@@ -217,8 +219,33 @@ p   {
     border: #0a3620 5px solid;
     border-right: 0;
     margin-bottom: 30px;
+    position: relative;
+    height: 150px;
+    width: 90%;
+    transition: width 2s;
+    float: right;
+}
+
+.right-cover    {
+    background-color: var(--background-section);
+    width: 90%;
+    height: 150px;
+    z-index: 30;
+    position: absolute;
+    right: 0;
+    transition: width 2s;
+    border: var(--border-color) 3px dashed;
+    border-right: 0;
+}
+
+#section-portfolio:hover > .right-cover   {
+    width:5%
+}
+
+#section-resume:hover > .left-cover   {
+    width:5%
 }
 
 #section-contact:hover > .right-cover   {
-    width:0%
+    width:5%
 }
