@@ -6,6 +6,7 @@
     --border-color: black;
     --section-shadow-color: #917878;
 }
+ /* Fonts */
 
 @font-face  {
     font-family: 'Menseal-Regular';
@@ -51,60 +52,26 @@
     src: url(../assets/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf);
 }
 
-@media screen and (max-width: 690px) {
-    #top-header   {
-        /* background-color: var(--background-head); */
+/* Media Query */
+
+@media screen and (max-width: 769px) {
+    .text   {
+        font-size: 13px;
     }
 }
+
+/* Full Page */
 
 body    {
     background-color: var(--background-main);
     font-family: 'Menseal-Bold', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Header, in order as they appear */
+
 header  {
     color: var(--text-color-1);
     width: 100%;
-}
-
-h1  {
-    font-size: 40px;
-
-}
-
-h2  {
-    font-size: 30px;
-    background-color: var(--background-head);
-    color: var(--text-color-1);
-    border-radius: 10px;
-}
-
-.right-head {
-    position: relative;
-    right: 20px;
-    padding: 20px;
-    z-index: 50;
-}
-
-.left-head  {
-    position: relative;
-    left: 20px;
-    padding: 20px;
-    z-index: 50;
-}
-
-.card   {
-    background-color: var(--background-section);
-}
-
-a   {
-    text-decoration: none;
-    color: var(--text-color-1);
-    font-family: 'AtkinsonHyperlegible-Bold', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-p   {
-    font-family: 'AtkinsonHyperlegible-Bold', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #top-header {
@@ -113,6 +80,19 @@ p   {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 30px 0 30px 0;
+}
+
+h1  {
+    font-size: 40px;
+
+}
+
+#logo   {
+    background-color: var(--background-head);
+    width: 25%;
+    padding-left: 30px;
+    border: 5px solid var(--background-section);
+    border-left: 0;
 }
 
 #navbar {
@@ -129,19 +109,23 @@ p   {
     padding-left: 20px;
 }
 
-#logo   {
-    background-color: var(--background-head);
-    width: 25%;
-    padding-left: 30px;
-    border: 5px solid var(--background-section);
-    border-left: 0;
+a   {
+    text-decoration: none;
+    color: var(--text-color-1);
+    font-family: 'AtkinsonHyperlegible-Bold', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.card {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+/* Picture of me */
+
+#banner {
+    display: inline-flex;
+    height: 360px;
+    width: 240px;
+    left: 50%;
 }
+
+/* Content, in order as they appear */
+/* About section */
 
 #section-about  {
     background-color: #64917a;
@@ -157,18 +141,19 @@ p   {
     width: 90%;
 }
 
-#section-resume {
-    background-color: #64917a;
-    margin-right: 10%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: #0a3620 5px solid;
-    border-left: 0;
-    box-shadow: #917878 10px 10px 10px, #917878 -10px 10px 10px;
-    margin-bottom: 30px;
-    position: relative;
-    height: 150px;
-    width: 90%;
+#section-about:hover > .left-cover   {
+    width:5%
+}
+
+.card   {
+    background-color: var(--background-section);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+p   {
+    font-family: 'AtkinsonHyperlegible-Bold', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .text   {
@@ -190,9 +175,21 @@ p   {
     border-left: 0;
 }
 
-#section-about:hover > .left-cover   {
-    width:5%
+h2  {
+    font-size: 30px;
+    background-color: var(--background-head);
+    color: var(--text-color-1);
+    border-radius: 10px;
 }
+
+.left-head  {
+    position: relative;
+    left: 20px;
+    padding: 20px;
+    z-index: 50;
+}
+
+/* Portfolio section */
 
 #section-portfolio  {
     background-color: #64917a;
@@ -203,12 +200,99 @@ p   {
     border: #0a3620 5px solid;
     border-right: 0;
     margin-bottom: 30px;
-    transition: width 2s;
     width: 90%;
-    height: 150px;
-    position: relative;
+    height: 250px;
+    /* position: relative; */
     float: right;
 }
+
+#section-portfolio:hover > .right-cover   {
+    width:5%
+}
+
+.right-cover    {
+    background-color: var(--background-section);
+    width: 90%;
+    height: 150px;
+    z-index: 30;
+    position: absolute;
+    right: 0;
+    transition: width 2s;
+    border: var(--border-color) 3px dashed;
+    border-right: 0;
+}
+
+.right-head {
+    position: relative;
+    right: 20px;
+    padding: 20px;
+    z-index: 50;
+}
+
+#portfolio  {
+    padding-right: 100px;
+}
+
+.portfolio-list   {
+    display: inline-flex;
+    position: relative;
+    height: 100px;
+    width: 250px;
+    z-index: 10;
+    border: 5px solid var(--background-head);
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+    font-size: 20px;
+}
+
+.portfolio-list-images {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 5;
+    opacity: .3;
+    transition: linear opacity .4s;    
+}
+
+.portfolio-list-images:hover    {
+    opacity: .7;
+}
+
+.portfolio-list p    {
+    font-family: 'Menseal-Black', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 6;
+    /* background-color: var(--background-head); */
+    position: relative;
+    color: black;
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Resume section */
+
+#section-resume {
+    background-color: #64917a;
+    margin-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: #0a3620 5px solid;
+    border-left: 0;
+    box-shadow: #917878 10px 10px 10px, #917878 -10px 10px 10px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 150px;
+    width: 90%;
+}
+
+#section-resume:hover > .left-cover   {
+    width:5%
+}
+
+/* Contact section */
 
 #section-contact    {
     background-color: #64917a;
@@ -224,26 +308,6 @@ p   {
     width: 90%;
     transition: width 2s;
     float: right;
-}
-
-.right-cover    {
-    background-color: var(--background-section);
-    width: 90%;
-    height: 150px;
-    z-index: 30;
-    position: absolute;
-    right: 0;
-    transition: width 2s;
-    border: var(--border-color) 3px dashed;
-    border-right: 0;
-}
-
-#section-portfolio:hover > .right-cover   {
-    width:5%
-}
-
-#section-resume:hover > .left-cover   {
-    width:5%
 }
 
 #section-contact:hover > .right-cover   {
