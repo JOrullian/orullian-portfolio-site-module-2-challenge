@@ -52,55 +52,6 @@
     src: url(../assets/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf);
 }
 
-/* Media Query */
-
-@media screen and (max-width: 768px) {
-    #text-about   {
-        font-size: 13px;
-    }
-
-    .right-cover,
-    .left-cover {
-        display: none;
-    }
-
-        .extra-portfolio-list .portfolio-list  {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    #portfolio  {
-        padding-right: 250px;
-    }
-
-    .portfolio-list    {
-        display: inline-flex;
-        height: 100px;
-        width: 275px;
-        font-size: 20px;
-        border: 5px solid var(--background-head);
-    }
-
-    .extra-portfolio-list .portfolio-list  {
-        display: inline-flex;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    #portfolio  {
-        padding-right: 30px;
-    }
-
-    .portfolio-list {
-        display: inline-flex;
-        font-size: 10px;
-        height: 50px;
-        width: 100px;
-        border: 4px solid var(--background-head);
-    }
-}
-
 /* Full Page */
 
 body    {
@@ -166,6 +117,24 @@ a   {
     align-items: center;
 }
 
+#paint-splatter {
+    position: absolute;
+    z-index: 7;
+    width: 550px;
+    height: auto;
+    left: -10%;
+    opacity: .7;
+    bottom: 200px;
+}
+
+#tolkien-quote  {
+    position: absolute;
+    margin-bottom: 30px;
+    z-index: 8;
+    left: 5%;
+    font-size: 30px;
+}
+
 #banner-background  {
     width: 100%;
     height: 60%;
@@ -182,12 +151,6 @@ a   {
     border-radius: 100% 100%;
     position: relative;
     z-index: 7;
-}
-
-#tolkien-quote  {
-    position: absolute;
-    margin-bottom: 30px;
-    z-index: 8;
 }
 
 /* Content, in order as they appear */
@@ -375,4 +338,53 @@ h2  {
 
 #section-contact:hover > .right-cover   {
     width:5%
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+    #text-about   {
+        font-size: 13px;
+    }
+
+    .right-cover,
+    .left-cover {
+        display: none;
+    }
+
+        .extra-portfolio-list .portfolio-list  {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #portfolio  {
+        padding-right: 250px;
+    }
+
+    .portfolio-list    {
+        display: inline-flex;
+        height: 100px;
+        width: 275px;
+        font-size: 20px;
+        border: 5px solid var(--background-head);
+    }
+
+    .extra-portfolio-list .portfolio-list  {
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #portfolio  {
+        padding-right: 30px;
+    }
+
+    .portfolio-list {
+        display: inline-flex;
+        font-size: 10px;
+        height: 50px;
+        width: 100px;
+        border: 4px solid var(--background-head);
+    }
 }
