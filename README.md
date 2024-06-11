@@ -28,6 +28,7 @@ This project is part of an ongoing coding bootcamp.
 [Pine forest photo](https://www.pexels.com/photo/green-pine-trees-1179229/), 
 [Daisy photo](https://www.pexels.com/photo/photo-of-daisy-flowers-1477166/),
 [Green Leaf Trees on Forest photo](https://www.pexels.com/photo/green-leaf-trees-on-forest-167698/)
+[Big Bang Theory cast image](https://www.bfmtv.com/people/series/the-big-bang-theory-john-galecki-alias-leonard-filme-la-destruction-du-decor_AN-201905090063.html)
 
 [Dev icon - Freepik - Flaticon](https://www.flaticon.com/free-icons/brands-and-logotypes), 
 [Gmail icon - Pixel perfect - Flaticon](https://www.flaticon.com/free-icons/gmail), 
